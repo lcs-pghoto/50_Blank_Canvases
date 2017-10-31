@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
 /*:
  ## Add your code below
@@ -24,8 +24,21 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
+canvas.fillColor = Color.black
+
+var witchhat : [NSPoint] = []
+witchhat.append(NSPoint(x: 200, y: 200))
+witchhat.append(NSPoint(x: 250, y: 350))
+witchhat.append(NSPoint(x: 300, y: 200))
+canvas.drawCustomShape(with: witchhat)
+
+canvas.fillColor = Color.black
 
 
+
+
+canvas.drawEllipse(centreX: 250, centreY: 200, width: 200, height: 100)
+canvas.drawLine(fromX: 200, fromY: 200, toX: 250, toY: 350)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
